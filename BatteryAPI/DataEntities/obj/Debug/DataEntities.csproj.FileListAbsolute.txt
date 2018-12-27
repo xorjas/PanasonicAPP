@@ -1,0 +1,5 @@
+c:\users\frank\documents\visual studio 2015\Projects\BatteryAPI\DataEntities\bin\Debug\DataEntities.dll
+c:\users\frank\documents\visual studio 2015\Projects\BatteryAPI\DataEntities\bin\Debug\DataEntities.pdb
+c:\users\frank\documents\visual studio 2015\Projects\BatteryAPI\DataEntities\obj\Debug\DataEntities.dll
+c:\users\frank\documents\visual studio 2015\Projects\BatteryAPI\DataEntities\obj\Debug\DataEntities.pdb
+c:\users\frank\documents\visual studio 2015\Projects\BatteryAPI\DataEntities\obj\Debug\DataEntities.csprojResolveAssemblyReference.cache

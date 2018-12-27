@@ -1,0 +1,14 @@
+c:\users\frank\documents\visual studio 2015\Projects\BatteryAPI\DataAccess\bin\Debug\DataAccess.dll
+c:\users\frank\documents\visual studio 2015\Projects\BatteryAPI\DataAccess\bin\Debug\DataAccess.pdb
+c:\users\frank\documents\visual studio 2015\Projects\BatteryAPI\DataAccess\bin\Debug\DataEntities.dll
+c:\users\frank\documents\visual studio 2015\Projects\BatteryAPI\DataAccess\bin\Debug\DataModel.dll
+c:\users\frank\documents\visual studio 2015\Projects\BatteryAPI\DataAccess\bin\Debug\DataEntities.pdb
+c:\users\frank\documents\visual studio 2015\Projects\BatteryAPI\DataAccess\bin\Debug\DataModel.pdb
+c:\users\frank\documents\visual studio 2015\Projects\BatteryAPI\DataAccess\obj\Debug\DataAccess.csprojResolveAssemblyReference.cache
+c:\users\frank\documents\visual studio 2015\Projects\BatteryAPI\DataAccess\obj\Debug\DataAccess.dll
+c:\users\frank\documents\visual studio 2015\Projects\BatteryAPI\DataAccess\obj\Debug\DataAccess.pdb
+c:\users\frank\documents\visual studio 2015\Projects\BatteryAPI\DataAccess\bin\Debug\DataAccess.dll.config
+c:\users\frank\documents\visual studio 2015\Projects\BatteryAPI\DataAccess\bin\Debug\EntityFramework.dll
+c:\users\frank\documents\visual studio 2015\Projects\BatteryAPI\DataAccess\bin\Debug\EntityFramework.SqlServer.dll
+c:\users\frank\documents\visual studio 2015\Projects\BatteryAPI\DataAccess\bin\Debug\EntityFramework.xml
+c:\users\frank\documents\visual studio 2015\Projects\BatteryAPI\DataAccess\bin\Debug\EntityFramework.SqlServer.xml

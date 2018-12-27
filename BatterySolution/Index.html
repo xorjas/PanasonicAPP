@@ -1,0 +1,208 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <meta charset="utf-8" />
+    <link href="Content/bootstrap-grid.min.css" rel="stylesheet" />
+    <link href="Content/bootstrap-reboot.min.css" rel="stylesheet" />
+    <link href="Content/bootstrap.min.css" rel="stylesheet" />
+    <link href="Content/Reset.css" rel="stylesheet" />
+    <link href="Content/Style.css" rel="stylesheet" />
+
+    <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+
+    <script src="Scripts/jquery-3.0.0.min.js"></script>
+    <script src="Scripts/bootstrap.min.js"></script>
+    <script src="Scripts/bootstrap.bundle.min.js"></script>
+
+</head>
+<body>
+    <div class="container p-0">
+        <div class="col-md-12 m-0 p-0" id="logoContainer">
+            <div class="col-md-12 row m-0 p-0">
+                <div class="col-md-7 m-0 p-0">
+                    <img src="Content/images/panasoniclogo.png" class="ml-9" />
+                </div>
+                <div class="col-md-5 m-0 p-1 offset-4 text-lg-right">
+                    <input type="text" placeholder="Usuario" class="form-control d-inline col-md-4" />
+                    <input type="text" placeholder="Contraseña" class="form-control d-inline col-md-4" />
+                    <button class="btn btn-primary">Ingresar</button>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-12" id="logoSeparator">
+
+        </div>
+        <div class="col-md-12 p-0 m-0" style="overflow:hidden">
+            <div id="sliderHolder">
+                <div id="searchForm">
+                    <h2>ENCUENTRE <br /><span>SU BATER&Iacute;A</span></h2>
+                    <div>
+                        <div>
+                            <select class="form-control mt-2" id="selectMarca">
+                                <option value="" selected disabled hidden>Marca</option>
+                            </select>
+                            <select class="form-control mt-2" id="selectModelo">
+                                <option value="" selected disabled hidden>Modelo</option>
+                            </select>
+                            <select class="form-control mt-2" id="selectAnnos">
+                                <option value="" selected disabled hidden>Año</option>
+                            </select>
+                            <select class="form-control mt-2" id="selectCilindrada">
+                                <option value="" selected disabled hidden>Cilindrada</option>
+                            </select>
+                            <input type="radio" name="gasType" class="mt-2" value="1" /><label>Gasolina</label>
+                            <input type="radio" name="gasType" class="mt-2" value="2" /><label>Diesel</label><br />
+                            <input type="button" class="btn col-md-12 mt-2" id="btnBuscar" value="Buscar">
+                        </div>
+                    </div>
+                </div>
+                <div id="slider">
+                    <img src="Content/images/batterybg1.png" class="col-md-12 m-0 p-0 float-left d-inline" />
+                    <img src="Content/images/batterybg2.png" class="col-md-12 m-0 p-0 float-left d-inline" />
+                    <img src="Content/images/batterybg3.png" class="col-md-12 m-0 p-0 float-left d-inline" />
+                </div>
+            </div>
+        </div>
+        <div class="col-md-12 pl-0 pr-0 pt-5 pb-5 bg-white batteryInfo" id="detallesBateria" style="display:none">
+            <div class="col-md-6 offset-md-3 p-0 text-center">
+                <table class="table m-0">
+                    <tr>
+                        <th class="font-weight-bold">Bateria</th>
+                        <th class="font-weight-bold">Largo</th>
+                        <th class="font-weight-bold">Ancho</th>
+                        <th class="font-weight-bold">Alto</th>
+                        <th class="font-weight-bold" abbr="">Peso</th>
+                    </tr>
+                    <tr>
+                        <td><p id="nombreBateria"></p></td>
+                        <td><p id="largoBateria"></p></td>
+                        <td><p id="anchoBateria"></p></td>
+                        <td><p id="altoBateria"></p></td>
+                        <td><p id="pesoBateria"></p></td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <div class="col-md-12 pl-0 pr-0 m-0 bg-white row batteryInfo">
+            <div>
+                <h1 id="presentaciones">Nuestras Presentaciones</h1>
+            </div>
+            <div class="row p-0 m-0 mt-5">
+                <div class="col-md-4 p-0 m-0">
+                    <h2 class="font-weight-bold offset-2 nombreBateria">MF STANDAR</h2>
+                    <img src="Content/images/mfstandar.jpg" class="d-block w-100" />
+                </div>
+                <div class="col-md-8 pr-0 pl-0 mt-5 row">
+                    <div class="col-md-4 p-0 text-left">
+                        <img src="Content/images/japantechicon.png" class="w-100" />
+                        <p class="text-center font-weight-bold p-2">Tecnologia Japonesa</p>
+                        <p class="text-center p-1">Usamos la misma tecnologia basica que en las fabricas de Japon, la cual es reconocida a nivel mundial por la fabricantes de vehiculos</p>
+                    </div>
+                    <div class="col-md-4 p-0 text-left">
+                        <img src="Content/images/bursticon.png" class="w-100" />
+                        <p class="text-center font-weight-bold p-2">Prevensi&oacute;n de explosiones</p>
+                        <p class="text-center p-1">Panasonic utiliza el "tapón de ventilación de prevención de explosiones" para todas las baterías MF, lo que puede evitar las explosiones resultantes de una chispa externa.</p>
+                    </div>
+                    <div class="col-md-4 p-0 text-left">
+                        <img src="Content/images/fluidlossicon.png" class="w-100" />
+                        <p class="text-center font-weight-bold p-2">Prevenci&oacute;n de perdida de fluidos</p>
+                        <p class="text-center p-1">Panasonic puede controlar lo mas posible la perdida de fluidos debido al "Filtro especial" y a la "Etiqueta adhesiva especial"</p>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="col-md-12 pl-0 pr-0 pt-5 m-0 bg-white row batteryInfo">
+            <hr />
+            <div class="row p-0 m-0">
+                <div class="col-md-4 p-0 m-0">
+                    <h2 class="font-weight-bold offset-2 nombreBateria">MF TOUGHT</h2>
+                    <img src="Content/images/mftough.jpg" class="d-block w-100" />
+                </div>
+                <div class="col-md-8 pr-0 pl-0 mt-5 row">
+                    <div class="col-md-4 p-0 text-left">
+                        <img src="Content/images/pickupicon.png" class="w-100" />
+                        <p class="text-center font-weight-bold p-2">Para Pick-Up</p>
+                        <p class="text-center p-1">Panasonic desarrollo la bateria MF la cual es mas adecuada para uso comercial</p>
+                    </div>
+                    <div class="col-md-4 p-0 text-left">
+                        <img src="Content/images/silveralloy.png" class="w-100" />
+                        <p class="text-center font-weight-bold p-2">Aleaci&oacute;n de plata</p>
+                        <p class="text-center p-1">Panasonic trabaja con tecnologias de aleaci&oacute;n de plata para hacer las baterias mas resistentes a las altas temperaturas</p>
+                    </div>
+                    <div class="col-md-4 p-0 text-left">
+                        <img src="Content/images/japantechicon.png" class="w-100" />
+                        <p class="text-center font-weight-bold p-2">Tecnologia Japonesa</p>
+                        <p class="text-center p-1">Usamos la misma tecnologia basica que en las fabricas de Japon, la cual es reconocida a nivel mundial por la fabricantes de vehiculos</p>
+                    </div>
+                    <div class="col-md-4 p-0 text-left">
+                        <img src="Content/images/bursticon.png" class="w-100" />
+                        <p class="text-center font-weight-bold p-2">Prevensi&oacute;n de explosiones</p>
+                        <p class="text-center p-1">Panasonic utiliza el "tapón de ventilación de prevención de explosiones" para todas las baterías MF, lo que puede evitar las explosiones resultantes de una chispa externa.</p>
+                    </div>
+                    <div class="col-md-4 p-0 text-left">
+                        <img src="Content/images/fluidlossicon.png" class="w-100" />
+                        <p class="text-center font-weight-bold p-2">Prevenci&oacute;n de perdida de fluidos</p>
+                        <p class="text-center p-1">Panasonic puede controlar lo mas posible la perdida de fluidos debido al "Filtro especial" y a la "Etiqueta adhesiva especial"</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-12 pl-0 pr-0 pt-5 m-0 bg-white row batteryInfo">
+            <hr />
+            <div class="row p-0 m-0">
+                <div class="col-md-4 p-0 m-0">
+                    <h2 class="font-weight-bold offset-2 nombreBateria">MF HIGH</h2>
+                    <img src="Content/images/mfhigh.jpg" class="d-block w-100" />
+                </div>
+                <div class="col-md-8 pr-0 pl-0 mt-5 row">
+                    <div class="col-md-4 p-0 text-left">
+                        <img src="Content/images/silveralloy.png" class="w-100" />
+                        <p class="text-center font-weight-bold p-2">Aleaci&oacute;n de plata</p>
+                        <p class="text-center p-1">Panasonic trabaja con tecnologias de aleaci&oacute;n de plata para hacer las baterias mas resistentes a las altas temperaturas</p>
+                    </div>
+                    <div class="col-md-4 p-0 text-left">
+                        <img src="Content/images/japantechicon.png" class="w-100" />
+                        <p class="text-center font-weight-bold p-2">Tecnologia Japonesa</p>
+                        <p class="text-center p-1">Usamos la misma tecnologia basica que en las fabricas de Japon, la cual es reconocida a nivel mundial por la fabricantes de vehiculos</p>
+                    </div>
+                    <div class="col-md-4 p-0 text-left">
+                        <img src="Content/images/bursticon.png" class="w-100" />
+                        <p class="text-center font-weight-bold p-2">Prevensi&oacute;n de explosiones</p>
+                        <p class="text-center p-1">Panasonic utiliza el "tapón de ventilación de prevención de explosiones" para todas las baterías MF, lo que puede evitar las explosiones resultantes de una chispa externa.</p>
+                    </div>
+                    <div class="col-md-4 p-0 text-left">
+                        <img src="Content/images/fluidlossicon.png" class="w-100" />
+                        <p class="text-center font-weight-bold p-2">Prevenci&oacute;n de perdida de fluidos</p>
+                        <p class="text-center p-1">Panasonic puede controlar lo mas posible la perdida de fluidos debido al "Filtro especial" y a la "Etiqueta adhesiva especial"</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Search Product Code Modal -->
+    <div class="modal fade" id="noResult" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel"></h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <h3 class="text-danger">No se ha encontrado ninguna bater&iacute;a</h3>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="Scripts/app/app.js"></script>
+
+</body>
+</html>

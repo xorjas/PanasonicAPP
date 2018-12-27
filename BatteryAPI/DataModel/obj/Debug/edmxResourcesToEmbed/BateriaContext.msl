@@ -1,0 +1,70 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="PanasonicModelStoreContainer" CdmEntityContainer="PanasonicConexion">
+    <EntitySetMapping Name="Anno">
+      <EntityTypeMapping TypeName="PanasonicModel.Anno">
+        <MappingFragment StoreEntitySet="Anno">
+          <ScalarProperty Name="ID_ANNO" ColumnName="ID_ANNO" />
+          <ScalarProperty Name="Detalle_Anno" ColumnName="Detalle_Anno" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Bateria">
+      <EntityTypeMapping TypeName="PanasonicModel.Bateria">
+        <MappingFragment StoreEntitySet="Bateria">
+          <ScalarProperty Name="CCA" ColumnName="CCA" />
+          <ScalarProperty Name="Peso" ColumnName="Peso" />
+          <ScalarProperty Name="Alto" ColumnName="Alto" />
+          <ScalarProperty Name="Ancho" ColumnName="Ancho" />
+          <ScalarProperty Name="Largo" ColumnName="Largo" />
+          <ScalarProperty Name="ID_Bateria" ColumnName="ID_Bateria" />
+          <ScalarProperty Name="Detalle_Bateria" ColumnName="Detalle_Bateria" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Cilindrada">
+      <EntityTypeMapping TypeName="PanasonicModel.Cilindrada">
+        <MappingFragment StoreEntitySet="Cilindrada">
+          <ScalarProperty Name="ID_Cilindrada" ColumnName="ID_Cilindrada" />
+          <ScalarProperty Name="Detalle_Cilindrada" ColumnName="Detalle_Cilindrada" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Inyeccion">
+      <EntityTypeMapping TypeName="PanasonicModel.Inyeccion">
+        <MappingFragment StoreEntitySet="Inyeccion">
+          <ScalarProperty Name="ID_Inyeccion" ColumnName="ID_Inyeccion" />
+          <ScalarProperty Name="Detalle_Inyeccion" ColumnName="Detalle_Inyeccion" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Marca">
+      <EntityTypeMapping TypeName="PanasonicModel.Marca">
+        <MappingFragment StoreEntitySet="Marca">
+          <ScalarProperty Name="ID_Marca" ColumnName="ID_Marca" />
+          <ScalarProperty Name="Detalle_Marca" ColumnName="Detalle_Marca" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Modelo">
+      <EntityTypeMapping TypeName="PanasonicModel.Modelo">
+        <MappingFragment StoreEntitySet="Modelo">
+          <ScalarProperty Name="ID_Modelo" ColumnName="ID_Modelo" />
+          <ScalarProperty Name="Detalle_Modelo" ColumnName="Detalle_Modelo" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Master_Table">
+      <EntityTypeMapping TypeName="PanasonicModel.Master_Table">
+        <MappingFragment StoreEntitySet="Master_Table">
+          <ScalarProperty Name="ID_Marca" ColumnName="ID_Marca" />
+          <ScalarProperty Name="ID_Modelo" ColumnName="ID_Modelo" />
+          <ScalarProperty Name="ID_Anno" ColumnName="ID_Anno" />
+          <ScalarProperty Name="ID_Inyeccion" ColumnName="ID_Inyeccion" />
+          <ScalarProperty Name="ID_Bateria" ColumnName="ID_Bateria" />
+          <ScalarProperty Name="ID_Cilindrada" ColumnName="ID_Cilindrada" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

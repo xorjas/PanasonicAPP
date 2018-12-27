@@ -1,0 +1,189 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="DB_PanasonicModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="Anno">
+    <Key>
+      <PropertyRef Name="ID_ANNO" />
+    </Key>
+    <Property Name="ID_ANNO" Type="Int32" Nullable="false" />
+    <Property Name="Detalle_Anno" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <NavigationProperty Name="Master_Table" Relationship="Self.FK_Master_Table_Anno" FromRole="Anno" ToRole="Master_Table" />
+  </EntityType>
+  <EntityType Name="Bateria">
+    <Key>
+      <PropertyRef Name="ID_Bateria" />
+    </Key>
+    <Property Name="ID_Bateria" Type="Int32" Nullable="false" />
+    <Property Name="Detalle_Bateria" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <NavigationProperty Name="Master_Table" Relationship="Self.FK_Master_Table_Bateria" FromRole="Bateria" ToRole="Master_Table" />
+  </EntityType>
+  <EntityType Name="Cilindrada">
+    <Key>
+      <PropertyRef Name="ID_Cilindrada" />
+    </Key>
+    <Property Name="ID_Cilindrada" Type="Int32" Nullable="false" />
+    <Property Name="Detalle_Cilindrada" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <NavigationProperty Name="Master_Table" Relationship="Self.FK_Master_Table_Cilindrada" FromRole="Cilindrada" ToRole="Master_Table" />
+  </EntityType>
+  <EntityType Name="Inyeccion">
+    <Key>
+      <PropertyRef Name="ID_Inyeccion" />
+    </Key>
+    <Property Name="ID_Inyeccion" Type="Int32" Nullable="false" />
+    <Property Name="Detalle_Inyeccion" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <NavigationProperty Name="Master_Table" Relationship="Self.FK_Master_Table_Inyeccion" FromRole="Inyeccion" ToRole="Master_Table" />
+  </EntityType>
+  <EntityType Name="Marca">
+    <Key>
+      <PropertyRef Name="ID_Marca" />
+    </Key>
+    <Property Name="ID_Marca" Type="Int32" Nullable="false" />
+    <Property Name="Detalle_Marca" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <NavigationProperty Name="Master_Table" Relationship="Self.FK_Master_Table_Marca" FromRole="Marca" ToRole="Master_Table" />
+  </EntityType>
+  <EntityType Name="Modelo">
+    <Key>
+      <PropertyRef Name="ID_Modelo" />
+    </Key>
+    <Property Name="ID_Modelo" Type="Int32" Nullable="false" />
+    <Property Name="Detalle_Modelo" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <NavigationProperty Name="Master_Table" Relationship="Self.FK_Master_Table_Modelo" FromRole="Modelo" ToRole="Master_Table" />
+  </EntityType>
+  <EntityType Name="sysdiagrams">
+    <Key>
+      <PropertyRef Name="diagram_id" />
+    </Key>
+    <Property Name="name" Type="String" MaxLength="128" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="principal_id" Type="Int32" Nullable="false" />
+    <Property Name="diagram_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="version" Type="Int32" />
+    <Property Name="definition" Type="Binary" MaxLength="Max" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="Master_Table">
+    <Key>
+      <PropertyRef Name="ID_Marca" />
+      <PropertyRef Name="ID_Modelo" />
+      <PropertyRef Name="ID_Anno" />
+      <PropertyRef Name="ID_Inyeccion" />
+      <PropertyRef Name="ID_Bateria" />
+      <PropertyRef Name="ID_Cilindrada" />
+    </Key>
+    <Property Name="ID_Marca" Type="Int32" Nullable="false" />
+    <Property Name="ID_Modelo" Type="Int32" Nullable="false" />
+    <Property Name="ID_Anno" Type="Int32" Nullable="false" />
+    <Property Name="ID_Inyeccion" Type="Int32" Nullable="false" />
+    <Property Name="ID_Bateria" Type="Int32" Nullable="false" />
+    <Property Name="ID_Cilindrada" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="Anno" Relationship="Self.FK_Master_Table_Anno" FromRole="Master_Table" ToRole="Anno" />
+    <NavigationProperty Name="Bateria" Relationship="Self.FK_Master_Table_Bateria" FromRole="Master_Table" ToRole="Bateria" />
+    <NavigationProperty Name="Cilindrada" Relationship="Self.FK_Master_Table_Cilindrada" FromRole="Master_Table" ToRole="Cilindrada" />
+    <NavigationProperty Name="Inyeccion" Relationship="Self.FK_Master_Table_Inyeccion" FromRole="Master_Table" ToRole="Inyeccion" />
+    <NavigationProperty Name="Marca" Relationship="Self.FK_Master_Table_Marca" FromRole="Master_Table" ToRole="Marca" />
+    <NavigationProperty Name="Modelo" Relationship="Self.FK_Master_Table_Modelo" FromRole="Master_Table" ToRole="Modelo" />
+  </EntityType>
+  <Association Name="FK_Master_Table_Anno">
+    <End Role="Anno" Type="Self.Anno" Multiplicity="1" />
+    <End Role="Master_Table" Type="Self.Master_Table" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Anno">
+        <PropertyRef Name="ID_ANNO" />
+      </Principal>
+      <Dependent Role="Master_Table">
+        <PropertyRef Name="ID_Anno" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Master_Table_Bateria">
+    <End Role="Bateria" Type="Self.Bateria" Multiplicity="1" />
+    <End Role="Master_Table" Type="Self.Master_Table" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Bateria">
+        <PropertyRef Name="ID_Bateria" />
+      </Principal>
+      <Dependent Role="Master_Table">
+        <PropertyRef Name="ID_Bateria" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Master_Table_Cilindrada">
+    <End Role="Cilindrada" Type="Self.Cilindrada" Multiplicity="1" />
+    <End Role="Master_Table" Type="Self.Master_Table" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Cilindrada">
+        <PropertyRef Name="ID_Cilindrada" />
+      </Principal>
+      <Dependent Role="Master_Table">
+        <PropertyRef Name="ID_Cilindrada" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Master_Table_Inyeccion">
+    <End Role="Inyeccion" Type="Self.Inyeccion" Multiplicity="1" />
+    <End Role="Master_Table" Type="Self.Master_Table" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Inyeccion">
+        <PropertyRef Name="ID_Inyeccion" />
+      </Principal>
+      <Dependent Role="Master_Table">
+        <PropertyRef Name="ID_Inyeccion" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Master_Table_Marca">
+    <End Role="Marca" Type="Self.Marca" Multiplicity="1" />
+    <End Role="Master_Table" Type="Self.Master_Table" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Marca">
+        <PropertyRef Name="ID_Marca" />
+      </Principal>
+      <Dependent Role="Master_Table">
+        <PropertyRef Name="ID_Marca" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Master_Table_Modelo">
+    <End Role="Modelo" Type="Self.Modelo" Multiplicity="1" />
+    <End Role="Master_Table" Type="Self.Master_Table" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Modelo">
+        <PropertyRef Name="ID_Modelo" />
+      </Principal>
+      <Dependent Role="Master_Table">
+        <PropertyRef Name="ID_Modelo" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="DB_PanasonicConnection" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Anno" EntityType="Self.Anno" />
+    <EntitySet Name="Bateria" EntityType="Self.Bateria" />
+    <EntitySet Name="Cilindrada" EntityType="Self.Cilindrada" />
+    <EntitySet Name="Inyeccion" EntityType="Self.Inyeccion" />
+    <EntitySet Name="Marca" EntityType="Self.Marca" />
+    <EntitySet Name="Modelo" EntityType="Self.Modelo" />
+    <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagrams" />
+    <EntitySet Name="Master_Table" EntityType="Self.Master_Table" />
+    <AssociationSet Name="FK_Master_Table_Anno" Association="Self.FK_Master_Table_Anno">
+      <End Role="Anno" EntitySet="Anno" />
+      <End Role="Master_Table" EntitySet="Master_Table" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Master_Table_Bateria" Association="Self.FK_Master_Table_Bateria">
+      <End Role="Bateria" EntitySet="Bateria" />
+      <End Role="Master_Table" EntitySet="Master_Table" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Master_Table_Cilindrada" Association="Self.FK_Master_Table_Cilindrada">
+      <End Role="Cilindrada" EntitySet="Cilindrada" />
+      <End Role="Master_Table" EntitySet="Master_Table" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Master_Table_Inyeccion" Association="Self.FK_Master_Table_Inyeccion">
+      <End Role="Inyeccion" EntitySet="Inyeccion" />
+      <End Role="Master_Table" EntitySet="Master_Table" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Master_Table_Marca" Association="Self.FK_Master_Table_Marca">
+      <End Role="Marca" EntitySet="Marca" />
+      <End Role="Master_Table" EntitySet="Master_Table" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Master_Table_Modelo" Association="Self.FK_Master_Table_Modelo">
+      <End Role="Modelo" EntitySet="Modelo" />
+      <End Role="Master_Table" EntitySet="Master_Table" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

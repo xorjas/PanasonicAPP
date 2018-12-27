@@ -1,0 +1,10 @@
+c:\users\frank\documents\visual studio 2015\Projects\BatteryAPI\DataModel\bin\Debug\DataModel.dll.config
+c:\users\frank\documents\visual studio 2015\Projects\BatteryAPI\DataModel\bin\Debug\DataModel.dll
+c:\users\frank\documents\visual studio 2015\Projects\BatteryAPI\DataModel\bin\Debug\DataModel.pdb
+c:\users\frank\documents\visual studio 2015\Projects\BatteryAPI\DataModel\bin\Debug\EntityFramework.dll
+c:\users\frank\documents\visual studio 2015\Projects\BatteryAPI\DataModel\bin\Debug\EntityFramework.SqlServer.dll
+c:\users\frank\documents\visual studio 2015\Projects\BatteryAPI\DataModel\bin\Debug\EntityFramework.xml
+c:\users\frank\documents\visual studio 2015\Projects\BatteryAPI\DataModel\bin\Debug\EntityFramework.SqlServer.xml
+c:\users\frank\documents\visual studio 2015\Projects\BatteryAPI\DataModel\obj\Debug\DataModel.dll
+c:\users\frank\documents\visual studio 2015\Projects\BatteryAPI\DataModel\obj\Debug\DataModel.pdb
+C:\Users\Frank\Documents\Visual Studio 2015\Projects\BatteryAPI\DataModel\obj\Debug\DataModel.csprojResolveAssemblyReference.cache

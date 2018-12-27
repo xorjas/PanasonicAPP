@@ -1,0 +1,13 @@
+c:\users\frank\documents\visual studio 2015\Projects\BatteryAPI\DataLogic\bin\Debug\DataLogic.dll
+c:\users\frank\documents\visual studio 2015\Projects\BatteryAPI\DataLogic\bin\Debug\DataLogic.pdb
+c:\users\frank\documents\visual studio 2015\Projects\BatteryAPI\DataLogic\bin\Debug\DataAccess.dll
+c:\users\frank\documents\visual studio 2015\Projects\BatteryAPI\DataLogic\bin\Debug\DataEntities.dll
+c:\users\frank\documents\visual studio 2015\Projects\BatteryAPI\DataLogic\bin\Debug\DataModel.dll
+c:\users\frank\documents\visual studio 2015\Projects\BatteryAPI\DataLogic\bin\Debug\EntityFramework.dll
+c:\users\frank\documents\visual studio 2015\Projects\BatteryAPI\DataLogic\bin\Debug\DataAccess.pdb
+c:\users\frank\documents\visual studio 2015\Projects\BatteryAPI\DataLogic\bin\Debug\DataEntities.pdb
+c:\users\frank\documents\visual studio 2015\Projects\BatteryAPI\DataLogic\bin\Debug\DataModel.pdb
+c:\users\frank\documents\visual studio 2015\Projects\BatteryAPI\DataLogic\obj\Debug\DataLogic.csprojResolveAssemblyReference.cache
+c:\users\frank\documents\visual studio 2015\Projects\BatteryAPI\DataLogic\obj\Debug\DataLogic.dll
+c:\users\frank\documents\visual studio 2015\Projects\BatteryAPI\DataLogic\obj\Debug\DataLogic.pdb
+c:\users\frank\documents\visual studio 2015\Projects\BatteryAPI\DataLogic\bin\Debug\EntityFramework.xml

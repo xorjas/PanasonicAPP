@@ -1,0 +1,377 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <meta charset="utf-8" />
+    <link href="Content/bootstrap-grid.min.css" rel="stylesheet" />
+    <link href="Content/bootstrap-reboot.min.css" rel="stylesheet" />
+    <link href="Content/bootstrap.min.css" rel="stylesheet" />
+    <link href="Content/Reset.css" rel="stylesheet" />
+    <link href="Content/Style.css" rel="stylesheet" />
+
+    <script src="Scripts/jquery-3.0.0.min.js"></script>
+    <script src="Scripts/bootstrap.min.js"></script>
+    <script src="Scripts/bootstrap.bundle.min.js"></script>
+</head>
+<body>
+    <div class="container-fluid p-0">
+
+        <div class="col-md-12">
+            <div class="row col-md-12">
+
+                <div class="m-0 p-0 col-md-6 border border-dark p-3">
+                    <h3 class="font-weight-bold">Mantenimiento Marca</h3>
+                    <div class="inputsSupport">
+                        <input type="text" placeholder="ID Marca" />
+                        <input type="text" placeholder="Detalle" />
+                        <button class="btn btn-primary">Agregar</button>
+                        <button class="btn btn-primary">Editar</button>
+                    </div>
+                    <table class="table table-striped" id="tableMarcas">
+                        <thead>
+                            <tr>
+                                <th class="font-weight-bold">Identificador</th>
+                                <th class="font-weight-bold">Detalle</th>
+                                <th class="font-weight-bold">Acciones</th>
+                            </tr>
+                        </thead>
+                    </table>
+                </div>
+                <div class="m-0 p-0 col-md-6 border border-dark p-3">
+                    <h3 class="font-weight-bold">Mantenimiento Modelo</h3>
+                    <div>
+                        <input type="text" placeholder="ID Modelo" />
+                        <input type="text" placeholder="Detalle" />
+                        <button class="btn btn-primary">Agregar</button>
+                        <button class="btn btn-primary">Editar</button>
+                    </div>
+                    <table class="table table-striped" id="tableModelo">
+                        <thead>
+                            <tr>
+                                <th class="font-weight-bold">Identificador</th>
+                                <th class="font-weight-bold">Detalle</th>
+                                <th class="font-weight-bold">Acciones</th>
+                            </tr>
+                        </thead>
+                    </table>
+                </div>
+            </div>
+            <div class="row col-md-12">
+
+                <div class="m-0 p-0 col-md-6 border border-dark p-3">
+                    <h3 class="font-weight-bold">Mantenimiento Anno</h3>
+                    <div>
+                        <input type="text" placeholder="ID Anño" />
+                        <input type="text" placeholder="Detalle" />
+                        <button class="btn btn-primary">Agregar</button>
+                        <button class="btn btn-primary">Editar</button>
+                    </div>
+                    <table class="table table-striped" id="tableAnno">
+                        <thead>
+                            <tr>
+                                <th class="font-weight-bold">Identificador</th>
+                                <th class="font-weight-bold">Detalle</th>
+                                <th class="font-weight-bold">Acciones</th>
+                            </tr>
+                        </thead>
+                    </table>
+                </div>
+                <div class="m-0 p-0 col-md-6 border border-dark p-3">
+                    <h3 class="font-weight-bold">Mantenimiento Cilindrada</h3>
+                    <div>
+                        <input type="text" placeholder="ID Cilindrada" />
+                        <input type="text" placeholder="Detalle" />
+                        <button class="btn btn-primary">Agregar</button>
+                        <button class="btn btn-primary">Editar</button>
+                    </div>
+                    <table class="table table-striped" id="tableCilindrada">
+                        <thead>
+                            <tr>
+                                <th class="font-weight-bold">Identificador</th>
+                                <th class="font-weight-bold">Detalle</th>
+                                <th class="font-weight-bold">Acciones</th>
+                            </tr>
+                        </thead>
+                    </table>
+                </div>
+            </div>
+            <div class="row col-md-12">
+
+                <div class="m-0 p-0 col-md-6 border border-dark p-3">
+                    <h3 class="font-weight-bold">Mantenimiento Bateria</h3>
+                    <div>
+                        <input type="text" placeholder="ID Bateria" />
+                        <input type="text" placeholder="Detalle" />
+                        <input type="text" placeholder="Largo" />
+                        <input type="text" placeholder="Ancho" />
+                        <input type="text" placeholder="Alto" />
+                        <input type="text" placeholder="Peso" />
+                        <input type="text" placeholder="CCA" />
+                        <button class="btn btn-primary">Agregar</button>
+                        <button class="btn btn-primary">Editar</button>
+                    </div>
+
+                    <table class="table table-striped" id="tableBaterias">
+                        <thead>
+                            <tr>
+                                <th class="font-weight-bold">Identificador</th>
+                                <th class="font-weight-bold">Detalle</th>
+                                <th class="font-weight-bold">Largo</th>
+                                <th class="font-weight-bold">Ancho</th>
+                                <th class="font-weight-bold">Alto</th>
+                                <th class="font-weight-bold">Peso</th>
+                                <th class="font-weight-bold">CCA</th>
+                                <th class="font-weight-bold">Acciones</th>
+                            </tr>
+                        </thead>
+                    </table>
+                </div>
+                <div class="m-0 p-0 col-md-6 border border-dark p-3">
+                    <h3 class="font-weight-bold">Mantenimiento Vehiculos Bateria</h3>
+                    <div>
+                        <input type="text" placeholder="ID Bateria" name="Master_IDBateria" id="Master_IDBateria" />
+                        <input type="text" placeholder="ID Marca" name="Master_IDMarca" id="Master_IDMarca"/>
+                        <input type="text" placeholder="ID Modelo" name="Master_IDModelo" id="Master_IDModelo"/>
+                        <input type="text" placeholder="ID Anno" name="Master_IDAnno" id="Master_IDAnno"/>
+                        <input type="text" placeholder="ID Cilindrada" name="Master_IDCilindrada" id="Master_IDCilindrada"/>
+                        <input type="text" placeholder="ID Inyeccion" name="Master_IDInyeccion" id="Master_IDInyeccion"/>
+                        <button class="btn btn-primary" id="masterBtnAgregar">Agregar</button>
+                        <button class="btn btn-primary" id="masterBtnEditar">Editar</button>
+                    </div>
+                    <table class="table table-striped" id="tableMaster">
+                        <thead>
+                            <tr>
+                                <th class="font-weight-bold">ID Marca</th>
+                                <th class="font-weight-bold">ID Modelo</th>
+                                <th class="font-weight-bold">ID Anno</th>
+                                <th class="font-weight-bold">ID Cilindrada</th>
+                                <th class="font-weight-bold">ID Inyeccion</th>
+                                <th class="font-weight-bold">ID Bateria</th>
+                            </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <script type="text/javascript">
+        $(function () {
+
+
+
+            var support = {
+                cargarMarcas: function () {
+                    $.ajax({
+                        type: "GET",
+                        url: "http://localhost:50149/api/bateria/obtenerMarcas",
+                        dataType: "json",
+                        success: function (data) {
+                            var trows = "";
+                            trows += "<tbody>";
+                            data.forEach(function (element) {
+                                trows += "<tr>";
+                                trows += "<td>" + element.ID_Marca + "</td>"
+                                trows += "<td>" + element.Nombre_Marca + "</td>"
+                                trows += "<td><a href=''>Editar</a>|<a href=''>Eliminar</a></td>"
+                                trows += "</tr>";
+                            });
+                            trows += "</tbody>";
+                            $("#tableMarcas tbody").remove();
+                            $("#tableMarcas").append(trows);
+                        }
+                    });
+                },
+                cargarAnno : function(){
+                    $.ajax({
+                        type: "GET",
+                        url: "http://localhost:50149/api/bateria/ObtenerModelos",
+                        dataType: "json",
+                        success: function (data) {
+                            var trows = "";
+                            trows += "<tbody>";
+                            data.forEach(function (element) {
+                                trows += "<tr>";
+                                trows += "<td>" + element.ID_Modelo + "</td>"
+                                trows += "<td>" + element.Nombre_Modelo + "</td>"
+                                trows += "<td><a href=''>Editar</a>|<a href=''>Eliminar</a></td>"
+                                trows += "</tr>";
+                            });
+                            trows += "</tbody>";
+                            $("#tableModelo tbody").remove();
+                            $("#tableModelo").append(trows);
+                        }
+                    });
+                },
+                cargarModelos: function () {
+                    $.ajax({
+                        type: "GET",
+                        url: "http://localhost:50149/api/bateria/ObtenerAnnos",
+                        dataType: "json",
+                        success: function (data) {
+                            var trows = "";
+                            trows += "<tbody>";
+                            data.forEach(function (element) {
+                                trows += "<tr>";
+                                trows += "<td>" + element.ID_Anno + "</td>"
+                                trows += "<td>" + element.Nombre_Anno + "</td>"
+                                trows += "<td><a href=''>Editar</a>|<a href=''>Eliminar</a></td>"
+                                trows += "</tr>";
+                            });
+                            trows += "</tbody>";
+                            $("#tableAnno tbody").remove();
+                            $("#tableAnno").append(trows);
+                        }
+                    });
+                },
+                cargarCilindrada: function () {
+                    $.ajax({
+                        type: "GET",
+                        url: "http://localhost:50149/api/bateria/ObtenerCilindrada",
+                        dataType: "json",
+                        success: function (data) {
+                            var trows = "";
+                            trows += "<tbody>";
+                            data.forEach(function (element) {
+                                trows += "<tr>";
+                                trows += "<td>" + element.ID_Cilindrada + "</td>"
+                                trows += "<td>" + element.Nombre_Cilindrada + "</td>"
+                                trows += "<td><a href=''>Editar</a>|<a href=''>Eliminar</a></td>"
+                                trows += "</tr>";
+                            });
+                            trows += "</tbody>";
+                            $("#tableCilindrada tbody").remove();
+                            $("#tableCilindrada").append(trows);
+                        }
+                    });
+                },
+                cargarBaterias: function () {
+                    $.ajax({
+                        type: "GET",
+                        url: "http://localhost:50149/api/bateria/ObtenerBaterias",
+                        dataType: "json",
+                        success: function (data) {
+                            var trows = "";
+                            trows += "<tbody>";
+                            data.forEach(function (element) {
+                                trows += "<tr>";
+                                trows += "<td>" + element.ID_Bateria + "</td>";
+                                trows += "<td>" + element.Detalles_Bateria + "</td>";
+                                trows += "<td>" + element.Largo_Bateria + "</td>";
+                                trows += "<td>" + element.Ancho_Bateria + "</td>";
+                                trows += "<td>" + element.Alto_Bateria + "</td>";
+                                trows += "<td>" + element.Peso_Bateria + "</td>";
+                                trows += "<td>" + element.CCA_Bateria + "</td>";
+                                trows += "<td><a href=''>Editar</a>|<a href=''>Eliminar</a></td>"
+                                trows += "</tr>";
+                            });
+                            trows += "</tbody>";
+                            $("#tableBaterias tbody").remove();
+                            $("#tableBaterias").append(trows);
+                        }
+                    });
+                },
+                cargarMaster: function () {
+                    $.ajax({
+                        type: "GET",
+                        url: "http://localhost:50149/api/bateria/ObtenerMaster",
+                        dataType: "json",
+                        success: function (data) {
+                            var trows = "";
+                            trows += "<tbody>";
+                            data.forEach(function (element) {
+                                trows += "<tr>";
+                                trows += "<td>" + element.Master_IDMarca + "</td>";
+                                trows += "<td>" + element.Master_IDModelo + "</td>";
+                                trows += "<td>" + element.Master_IDAnno + "</td>";
+                                trows += "<td>" + element.Master_IDCilindrada + "</td>";
+                                trows += "<td>" + element.Master_IDInyeccion + "</td>";
+                                trows += "<td>" + element.Master_IDBateria + "</td>";
+                                trows += "<td><a href='' id='masterBtnEditarRow'>Editar</a>|<a href=''>Eliminar</a></td>"
+                                trows += "</tr>";
+                            });
+                            trows += "</tbody>";
+                            $("#tableMaster tbody").remove();
+                            $("#tableMaster").append(trows);
+                        }
+                    });
+                },
+                AgregarMaster: function () {
+
+                    var MasterDE = {
+                        Master_IDBateria : $("#Master_IDBateria").val(),
+                        Master_IDMarca: $("#Master_IDMarca").val(),
+                        Master_IDModelo: $("#Master_IDModelo").val(),
+                        Master_IDAnno: $("#Master_IDAnno").val(),
+                        Master_IDCilindrada: $("#Master_IDCilindrada").val(),
+                        Master_IDInyeccion: $("#Master_IDInyeccion").val()
+                    }
+
+                    $.ajax({
+                        type: "POST",
+                        url: "http://localhost:50149/api/Master/IngresarBateriaVehiculo",
+                        data: JSON.stringify(MasterDE),
+                        contentType: "application/json",
+                        success: function (data) {
+                            alert(data);
+                        },
+                        error: function (jqXHR,textStatus,errorThrown) {
+                            alert(errorThrown);
+                        }
+                    });
+                },
+                EditarMaster: function () {
+
+                    var oldIds = "";
+
+                    var MasterUpdateDE = {
+                        Master_IDBateria: $("#Master_IDBateria").val(),
+                        Master_IDMarca: $("#Master_IDMarca").val(),
+                        Master_IDModelo: $("#Master_IDModelo").val(),
+                        Master_IDAnno: $("#Master_IDAnno").val(),
+                        Master_IDCilindrada: $("#Master_IDCilindrada").val(),
+                        Master_IDInyeccion: $("#Master_IDInyeccion").val(),
+                        Master_OldIDs : oldIds
+                    }
+
+                    $.ajax({
+                        type: "PUT",
+                        url: "http://localhost:50149/api/Master/ActualizarBateriaVehiculo",
+                        data: JSON.stringify(MasterDE),
+                        contentType: "application/json",
+                        success: function (data) {
+                            alert(data);
+                        },
+                        error: function (jqXHR, textStatus, errorThrown) {
+                            alert(errorThrown);
+                        }
+                    });
+                },
+                EditarMasterRowClick: function (e) {
+                    e.preventDefault();
+                    var rowChilds = $(this).parent().parent().children();
+                    var stringList = [];
+                    rowChilds.each(function () {
+                        stringList.push($(this).text());
+                    })
+                    stringList.pop();
+
+
+                },
+                init: function () {
+                    this.cargarMarcas();
+                    this.cargarAnno();
+                    this.cargarModelos();
+                    this.cargarCilindrada();
+                    this.cargarBaterias();
+                    this.cargarMaster();
+                    $("#masterBtnAgregar").on("click", this.AgregarMaster)
+                    $("#masterBtnEditar").on("click", this.EditarMaster)
+                    $("body").on("click", "#masterBtnEditarRow",this.EditarMasterRowClick)
+                }
+            }
+
+            support.init();
+        })
+    </script>
+</body>
+</html>
